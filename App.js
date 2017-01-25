@@ -21,13 +21,13 @@ client.connect();
 
 client.on('chat', function(channel, user, message, self){
     if(message === "!twitter"){
-        client.action("nuubeeee", "Twitter account: twitter.com/blah.com");
+        client.say("nuubeeee", "Twitter account: twitter.com/blah.com");
     }
     if(message === '!build'){
-        client.action("nuubeeee", "Build can be found here: whateverurl.com");
+        client.say("nuubeeee", "Build can be found here: whateverurl.com");
     }
     if(message === '!bot'){
-        client.action("nuubeeee", "Twitter: !twitter \r\n" + "Build(s): !build \r\n" + "Bot commands: !bot");
+        client.say("nuubeeee", "Twitter: !twitter \r\n" + "Build(s): !build \r\n" + "Bot commands: !bot");
     }
     //client.action("nuubeeee", user['display-name'] + " you are the biggest noob ever!");
 });
